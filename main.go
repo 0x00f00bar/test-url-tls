@@ -58,11 +58,8 @@ func main() {
 	flag.Parse()
 
 	if url == "" {
-		fmt.Fprintf(
-			os.Stderr,
-			"Usage: %s [-s] -u <URL>\n\tSmall tool to test supported TLS versions by a URL\nFlags:\n\t-s\t: Skip certificate verification (optional)\n",
-			os.Args[0],
-		)
+		fmt.Println("Small tool to test supported TLS versions by a URL")
+		flag.Usage()
 		os.Exit(1)
 	}
 
