@@ -1,4 +1,4 @@
 bin/build/*
-bin/release/*
+# bin/release/*
 !bin/build/.empty
-!bin/release/.empty
+# !bin/release/.empty
