@@ -1,0 +1,4 @@
+bin/build/*
+bin/release/*
+!bin/build/.empty
+!bin/release/.empty
